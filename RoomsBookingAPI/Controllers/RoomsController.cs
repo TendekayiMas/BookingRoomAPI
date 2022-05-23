@@ -11,8 +11,8 @@ namespace RoomsBookingAPI.Controllers
         [HttpGet("GetRooms")]
         public IActionResult Get()
         {
-            var Rooms = GetRooms();
-            return Ok(Rooms); // return an ok result of 200 for now 
+            
+            return Ok(); // return an ok result of 200 for now 
         }
         [HttpPost("CreateRoom")] // create a new room in database 
 
@@ -35,13 +35,8 @@ namespace RoomsBookingAPI.Controllers
             return Ok();
         }
 
-        private List<RequestRoom> GetRooms()
-        {
-            return new List<RequestRoom>{
-                new RequestRoom { RoomNumber = 55, RoomAvailability = true, RoomPrice = 400, RoomType = "penthouse" },
-                new RequestRoom { RoomNumber = 35, RoomAvailability = true, RoomPrice = 400, RoomType = "penthouse" }
-            };
-        }
+      
+        
        
     }
 }
