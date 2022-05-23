@@ -17,4 +17,5 @@ namespace RoomsBookingAPI.Data
         {
             get; set;
         }
+    }
 }
