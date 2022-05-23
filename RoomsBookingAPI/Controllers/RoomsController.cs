@@ -11,7 +11,8 @@ namespace RoomsBookingAPI.Controllers
         [HttpGet("GetRooms")]
         public IActionResult Get()
         {
-            return Ok(); // return an ok result of 200 for now 
+            var Rooms = GetRooms();
+            return Ok(Rooms); // return an ok result of 200 for now 
         }
         [HttpPost("CreateRoom")] // create a new room in database 
 
