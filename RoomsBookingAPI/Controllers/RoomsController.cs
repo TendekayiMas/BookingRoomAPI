@@ -34,6 +34,13 @@ namespace RoomsBookingAPI.Controllers
             return Ok();
         }
 
+        private List<RequestRoom> GetRooms()
+        {
+            return new List<RequestRoom>{
+                new RequestRoom { RoomNumber = 55, RoomAvailability = true, RoomPrice = 400, RoomType = "penthouse" },
+                new RequestRoom { RoomNumber = 35, RoomAvailability = true, RoomPrice = 400, RoomType = "penthouse" }
+            };
+        }
        
     }
 }

@@ -2,7 +2,9 @@
 {
     public class RequestRoom //users to request specific rooms available 
     {
-        public int Id { get; set; } 
+        public int Id { get; set; }
+        
+        public int RoomNumber { get; set; }
 
         public string? RoomType { get; set; }
 
