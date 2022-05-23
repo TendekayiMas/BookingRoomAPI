@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RoomsBookingAPI.Models;
 
 namespace RoomsBookingAPI.Controllers
 {
@@ -12,25 +13,27 @@ namespace RoomsBookingAPI.Controllers
         {
             return Ok(); // return an ok result of 200 for now 
         }
-        [HttpPost("CreateRoom")]
+        [HttpPost("CreateRoom")] // create a new room in database 
 
-        public IActionResult Create()
+        public IActionResult Create([FromBody] RequestRoom request)  // the end user will pass this in the body of request 
         {
             return Ok();
         }
 
-        [HttpPut("UpdateRoom")]
+        [HttpPut("UpdateRoom")] // update rooms in database 
 
-        public IActionResult update()
+        public IActionResult update([FromBody] RequestRoom request)
         {
             return Ok();
         }
 
-        [HttpDelete("DeleteRoom")]
+        [HttpDelete("DeleteRoom/{Id}")] // Delete a room in the database 
 
-        public IActionResult Delete()
+        public IActionResult Delete(int Id) // for delete should just pass in the ID 
         {
             return Ok();
         }
+
+       
     }
 }
