@@ -9,7 +9,7 @@ namespace RoomsBookingAPI.Data
 
         }
 
-        public DbSet<TblRooms> TblRooms { get; set; } // this is where we get our rooms table
+        public DbSet<TblRooms> tbl_Rooms { get; set; } // this is where we get our rooms table
 
     }
 }

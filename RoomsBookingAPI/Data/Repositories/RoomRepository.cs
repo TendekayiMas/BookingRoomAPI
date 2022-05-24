@@ -12,27 +12,27 @@
 
         public void Add(TblRooms element)
         {
-            _roomsDBContext.TblRooms.Add(element);
+            _roomsDBContext.tbl_Rooms.Add(element);
         }
 
         public void Delete(int id)
         {
             var rooms = Get(id);
-            if (rooms is not null) _roomsDBContext.TblRooms.Remove(Get(id));
+            if (rooms is not null) _roomsDBContext.tbl_Rooms.Remove(Get(id));
         }
         public bool Exists(int id)
         {
-            return _roomsDBContext.TblRooms.Any(u => u.Id == id);
+            return _roomsDBContext.tbl_Rooms.Any(u => u.Id == id);
         }
         public TblRooms Get(int id)
         {
-            return _roomsDBContext.TblRooms.FirstOrDefault(u => u.Id == id);
+            return _roomsDBContext.tbl_Rooms.FirstOrDefault(u => u.Id == id);
         }
         public IEnumerable<TblRooms> GetAll()
         {
-            return _roomsDBContext.TblRooms.ToList();
+            return _roomsDBContext.tbl_Rooms.ToList();
         }
-        public bool Save()
+            public bool Save()
         {
             return _roomsDBContext.SaveChanges() > 0;
         }
