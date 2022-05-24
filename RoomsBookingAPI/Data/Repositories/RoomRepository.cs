@@ -17,8 +17,8 @@
 
         public void Delete(int id)
         {
-            var item = Get(id);
-            if (item is not null) _roomsDBContext.TblRooms.Remove(Get(id));
+            var rooms = Get(id);
+            if (rooms is not null) _roomsDBContext.TblRooms.Remove(Get(id));
         }
         public bool Exists(int id)
         {

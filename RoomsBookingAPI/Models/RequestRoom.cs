@@ -8,7 +8,7 @@
 
         public string? RoomType { get; set; }
 
-        public bool RoomAvailability { get; set; }
+        public string? RoomAvailability { get; set; }
 
         public int RoomPrice { get; set; }
     }
