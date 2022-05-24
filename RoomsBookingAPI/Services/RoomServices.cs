@@ -32,6 +32,8 @@ namespace RoomsBookingAPI.Services
         {
             old.RoomNumber = newT.RoomNumber;
             old.RoomAvailability = newT.RoomAvailability;
+            old.RoomPrice = newT.RoomPrice;
+            old.RoomType = newT.RoomType;
             _roomsRepository.Update(old);
             _roomsRepository.Save();
         }
