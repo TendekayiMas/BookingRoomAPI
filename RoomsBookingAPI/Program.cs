@@ -12,6 +12,9 @@ builder.Services.AddDbContext<RoomsDBContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddScoped<ICrudRepository<TblRooms, int>, RoomRepository>();
 builder.Services.AddScoped<ICrudServices<TblRooms, int>, RoomServices>();
+builder.Services.AddScoped<ICrudRepository<Users, int>, UserRepository>();
+builder.Services.AddScoped<ICrudServices<Users, int>, UserServices>();
+
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();

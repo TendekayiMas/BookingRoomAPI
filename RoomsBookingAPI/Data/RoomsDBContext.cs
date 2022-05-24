@@ -10,6 +10,6 @@ namespace RoomsBookingAPI.Data
         }
 
         public DbSet<TblRooms> tbl_Rooms { get; set; } // this is where we get our rooms table
-        public DbSet<Users> tbl_Rooms { get; set; } 
+        public DbSet<Users> tbl_users { get; set; } 
     }
 }
