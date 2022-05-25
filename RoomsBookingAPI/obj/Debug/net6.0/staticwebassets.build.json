@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "ELdaULKdvCgqe/UCTXND7y6PbRcTYgFMr6xO8jMbkgc=",
+  "Hash": "EryrnYWVoKSOiirpQy8m9d2RBCQOqsLC4unQ3CI85bQ=",
   "Source": "RoomsBookingAPI",
   "BasePath": "_content/RoomsBookingAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "RoomsBookingAPI\\wwwroot",
+      "Source": "RoomsBookingAPI",
+      "ContentRoot": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\",
+      "BasePath": "_content/RoomsBookingAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\index.html",
+      "SourceId": "RoomsBookingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\",
+      "BasePath": "_content/RoomsBookingAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\site.js",
+      "SourceId": "RoomsBookingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\",
+      "BasePath": "_content/RoomsBookingAPI",
+      "RelativePath": "site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\site.js"
+    },
+    {
+      "Identity": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\styles.css",
+      "SourceId": "RoomsBookingAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Git-velocity\\2022\\05-programming\\C#\\RoomsBookingAPI\\RoomsBooking\\RoomsBookingAPI\\wwwroot\\",
+      "BasePath": "_content/RoomsBookingAPI",
+      "RelativePath": "styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles.css"
+    }
+  ]
 }
